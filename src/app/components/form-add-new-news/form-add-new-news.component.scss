@@ -1,0 +1,11 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+	padding: 40px 0;
+}
+
+.file-name {
+	margin-left: 1em; /* or whatever margin you require */
+}

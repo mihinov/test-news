@@ -1,0 +1,18 @@
+<div class="news">
+
+  <div class="news-cards-wrapper" #newsCardsWrapper>
+
+
+    <ng-container *ngFor="let itemNews of news">
+      <app-news-card-mini [itemNews]="itemNews">
+
+      </app-news-card-mini>
+    </ng-container>
+
+  </div>
+
+  <ng-container *ngIf="loadNews">
+    <app-loader></app-loader>
+  </ng-container>
+
+</div>

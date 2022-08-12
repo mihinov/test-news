@@ -1,0 +1,11 @@
+.news-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .news-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

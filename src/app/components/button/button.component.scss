@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  background-color: var(--primaryColor);
+  color: var(--primaryBgColor);
+  border-radius: var(--borderRadiusBtn);
+  padding: 7px 14px;
+}
+
+.button_active {
+  user-select: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.button_active:hover {
+  opacity: 0.6;
+}

@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primaryBgColor: rgb(0, 0, 0);
+  --primaryColor: rgb(255, 255, 255);
+  --headerBgColor: var(--primaryBgColor);
+  --headerColor: var(--primaryColor);
+  --footerBgColor: var(--primaryBgColor);
+  --footerColor: var(--primaryColor);
+  --mainBgColor: var(--primaryBgColor);
+  --mainColor: var(--primaryColor);
+  --borderRadiusBtn: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.overflowYHidden {
+  overflow-y: hidden;
+}
+
+.input {
+	outline: none;
+	border: none;
+}
+
+.input_text {
+	padding: 7px 14px;
+	font-size: 1.5em;
+}
+
+.input_text:active {
+
+}
+
+// input-file
+
+
+
+// input-file

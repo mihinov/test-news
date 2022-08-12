@@ -1,0 +1,32 @@
+<ng-container *ngIf="itemNews">
+  <a [routerLink]="['news', itemNews.url]" class="news-card-mini">
+
+      <div class="news-card-mini__img-wrapper">
+        <img src="{{ itemNews.titleImageUrl }}" alt="" class="news-card-mini__img">
+      </div>
+
+      <div class="news-card-mini__content-absolute">
+
+        <div class="news-card-mini__title">
+          {{ itemNews.title }}
+        </div>
+
+        <div class="news-card-mini__description">
+          {{ itemNews.description }}
+        </div>
+
+        <div class="news-card-mini__published-date">
+          {{ itemNews.publishedDate | date }}
+        </div>
+
+        <div class="news-card-mini__category-type">
+          <app-button>
+            {{ itemNews.categoryType }}
+          </app-button>
+
+        </div>
+
+      </div>
+
+  </a>
+</ng-container>

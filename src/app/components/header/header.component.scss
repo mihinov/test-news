@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  padding: 25px 0;
+  background-color: var(--headerBgColor);
+  color: var(--headerColor);
+}
+
+.header__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

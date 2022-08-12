@@ -1,0 +1,27 @@
+<app-modal id="modal-1">
+	<form class="form" enctype="multipart/form-data" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+		<mat-form-field appearance="fill">
+			<mat-label>Название</mat-label>
+			<input matInput formControlName="title">
+		</mat-form-field>
+		<mat-form-field appearance="fill">
+			<mat-label>Описание</mat-label>
+			<input matInput formControlName="description">
+		</mat-form-field>
+
+		<div class="mat-wrapper">
+			<button type="button" mat-raised-button (click)="fileInput.click()">Выберите файл</button>
+			<input hidden (change)="onFileSelected($event)" #fileInput type="file" formControlName="imageFile">
+			<span class="file-name">{{selectedFile?.name}}</span>
+		</div>
+
+		<button
+			type="submit"
+			mat-raised-button
+			[disabled]="form.invalid || form.disabled || !isImageFile"
+		>Сохранить</button>
+
+	</form>
+
+</app-modal>

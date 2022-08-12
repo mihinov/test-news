@@ -1,0 +1,19 @@
+<ng-container *ngIf="oneNews$ | async as oneNews">
+  <div class="news-card-full">
+
+    <div class="news-card-full__title">
+      {{ oneNews.title }}
+    </div>
+
+    <div class="news-card-full__category-type">
+      <app-button>
+        {{ oneNews.categoryType }}
+      </app-button>
+    </div>
+
+    <div class="news-card-full__description" [innerHtml]="oneNews.text | safe: 'html'">
+
+    </div>
+
+  </div>
+</ng-container>
