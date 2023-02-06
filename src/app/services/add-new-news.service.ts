@@ -13,6 +13,8 @@ export class AddNewNewsService {
 
   constructor() {
 
+		console.log('test');
+
 		setTimeout(() => {
 			const allNews = this.getAllNews();
 
